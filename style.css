@@ -1,0 +1,707 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  perspective: 1000px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Lobster", cursive;
+}
+
+nav {
+  width: 100%;
+  height: 57px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h3 {
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
+  color: #979797;
+  margin-left: 30px;
+  font-family: "Comfortaa", cursive;
+}
+
+nav h3 .fa-location-dot {
+  margin-right: 3px;
+}
+
+nav .srh {
+  width: 230px;
+  height: 35px;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+  box-shadow: inset 3px 3px 10px #d9d9d9, inset -3px -3px 10px #ffffff;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #979797;
+  transition: all 0.1s;
+  margin-right: 30px;
+  padding: 0 10px;
+}
+
+nav .srh input[type="text"] {
+  outline: none;
+  border: none;
+  width: 100%;
+  background: transparent;
+  border-radius: 25px 25px 0;
+  height: inherit;
+  font-size: 1rem;
+  color: #555;
+  font-family: "Comfortaa", cursive;
+}
+
+nav .srh label {
+  cursor: pointer;
+}
+
+#home {
+  width: 100%;
+  height: 600px;
+  background: url(img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home .box {
+  width: 65%;
+  height: 280px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden visible;
+  position: relative;
+}
+
+#home .box::-webkit-scrollbar {
+  display: none;
+}
+
+.box header {
+  width: 100%;
+  height: 40px;
+  background: #000;
+  position: absolute;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.box header ul {
+  width: 330px;
+  height: inherit;
+  /* background-color: #555; */
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.box header ul li {
+  width: 110px;
+  height: 100%;
+  margin-right: 1px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.box header ul li.active {
+  background: tomato;
+}
+
+.box header ul li.active a.on {
+  color: #fff;
+}
+
+.box header ul li.active:hover a.on {
+  color: #000;
+}
+
+.box header ul li:hover {
+  background: #d9d9d9;
+}
+
+.box header ul li a {
+  color: #d9d9d9;
+  text-decoration: none;
+  letter-spacing: 1.1px;
+  font-size: 1.1rem;
+}
+
+.box header ul li:hover a {
+  color: #000;
+}
+
+.box .content {
+  width: 100%;
+  height: 680px;
+  background-color: #fff;
+}
+
+.box .content #flight {
+  width: 100%;
+  height: 250px;
+  background: #fff;
+  padding: 0 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.box .content #flight h2 {
+  letter-spacing: 2px;
+  font-size: 2.3rem;
+  font-weight: 400;
+}
+
+.box .content #flight .ipts {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box .content #flight .ipts .from label {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+}
+
+.box .content #flight .ipts .from input[type="text"] {
+  width: 420px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  border-radius: 20px 5px 5px 20px;
+  border: none;
+  outline: none;
+  font-family: "Comfortaa", cursive;
+  border: 2px solid #aaa;
+}
+
+.box .content #flight .ipts .from input[type="text"]:focus {
+  border: 2px solid #333;
+}
+
+.box .content #flight .ipts .from input.to {
+  border-radius: 5px 20px 20px 5px;
+}
+
+.box .content #flight input[type="submit"] {
+  width: 230px;
+  padding: 8px 0;
+  font-family: "Lobster", cursive;
+  font-size: 1.1em;
+  letter-spacing: 1.3px;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #555;
+  color: #fff;
+  font-weight: 300;
+  transition: all 0.1s;
+}
+
+.box .content #flight input[type="submit"]:hover {
+  background: #d9d9d9;
+  color: #000;
+}
+
+#hotel {
+  width: 100%;
+  height: 250px;
+  background: #fff;
+  padding: 0 20px;
+}
+
+#hotel ul {
+  width: 100%;
+  height: inherit;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+
+  list-style: none;
+}
+
+#hotel ul li a {
+  padding: 10px 25px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+}
+
+#hotel ul li a:hover {
+  background: #d9d9d9;
+  color: #000;
+}
+
+#rental {
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+  padding: 0 20px;
+}
+
+#rental ul {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+
+  list-style: none;
+}
+
+#rental ul li span {
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  background: tomato;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+#rental ul li input[type="text"] {
+  width: 840px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: "Comfortaa", cursive;
+  border: 2px solid #aaa;
+}
+
+#rental ul li input[type="text"]:focus {
+  border-color: #333;
+}
+
+#rental ul li a {
+  padding: 10px 25px;
+  background: #555;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  transition: all 0.1s;
+}
+
+#rental ul li a:hover {
+  background: #d9d9d9;
+  color: #000;
+}
+
+#offers {
+  width: 100%;
+  height: 630px;
+  padding: 0 150px;
+  background: #e0e0e0;
+}
+
+#offers h2 {
+  padding: 30px 0 15px 0;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#offers span {
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+#offers .images {
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#offers .images .fimg {
+  width: 460px;
+  height: 460px;
+  /* background: burlywood; */
+  margin-right: 5px;
+  position: relative;
+}
+
+#offers .images .fimg img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 60px 80px 40px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+#offers .images .fimg span {
+  position: absolute;
+  bottom: 10px;
+  left: 25px;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+}
+
+#offers .images .timg,
+.timgs {
+  width: 300px;
+  height: 480px;
+  margin: 0 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  position: relative;
+}
+
+#offers .images .timg img,
+#offers .images .timgs img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 30px 18px 30px 18px;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+#offers .images .timgs img {
+  border-radius: 18px 30px 18px 30px;
+}
+
+#offers .images .timg .one,
+#offers .images .timgs .one {
+  position: absolute;
+  top: 205px;
+  left: 20px;
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+}
+
+#offers .images .timg .two,
+#offers .images .timgs .two {
+  position: absolute;
+  bottom: 18px;
+  left: 20px;
+  color: #fff;
+  font-family: "Comfortaa", cursive;
+}
+
+#nature {
+  width: 100%;
+  height: 600px;
+  padding: 0 150px;
+  background: #e0e0e0;
+}
+
+#nature h2 {
+  padding: 10px 0;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+#nature span {
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+#nature .e-box {
+  width: 100%;
+  height: 500px;
+  /* background-color: #000; */
+
+  display: flex;
+  justify-content: start;
+  align-items: end;
+}
+
+#nature .e-box .l-box {
+  width: 48%;
+  height: 480px;
+  cursor: pointer;
+  background: linear-gradient(
+    108deg,
+    rgba(221, 218, 247, 1) 0%,
+    rgba(227, 232, 254, 1) 87%
+  );
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.4);
+  margin-right: 25px;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  transition: all 0.3s;
+}
+
+#nature .e-box .l-box:hover {
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+#nature .e-box .l-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
+  opacity: 0.8;
+}
+
+#nature .e-box .l-box:hover img {
+  opacity: 1;
+}
+
+#nature .e-box .l-box h2 {
+  text-shadow: -5px -5px 3px #aaa;
+  color: #555;
+  padding-left: 20px;
+}
+
+#nature .e-box .l-box ul {
+  padding: 0px 30px;
+}
+
+#nature .e-box .l-box ul li {
+  list-style-type: circle;
+  text-transform: capitalize;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-family: "Comfortaa", cursive;
+  font-size: 0.9rem;
+}
+
+#nature .e-box .l-box ul li a {
+  color: tomato;
+  padding: 7px 17px;
+  /* background-color: #555; */
+  text-decoration: none;
+  border-radius: 20px 5px 20px 5px;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  font-family: "Lobster", cursive;
+  transition: all 0.2s;
+}
+
+#nature .e-box .l-box ul li a:hover {
+  background-color: #979797;
+  color: #000;
+}
+
+#mesBox {
+  width: 100%;
+  height: 370px;
+  padding: 0 150px;
+  background: #e0e0e0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mesBox .mess {
+  width: 100%;
+  height: 300px;
+  background-color: #000;
+  opacity: 0.6;
+  border-radius: 25px;
+  padding: 0 20px;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+#mesBox .mess:hover {
+  opacity: 1;
+}
+
+#mesBox .mess h1 {
+  padding: 25px 0 10px 0;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
+#mesBox .mess span {
+  letter-spacing: 1px;
+  font-weight: 200;
+}
+
+#mesBox .mess .mBox label {
+  display: block;
+  font-size: 1.3em;
+  margin: 30px 0 8px 0;
+}
+
+#mesBox .mess .mBox input[type="email"] {
+  width: 100%;
+  height: 45px;
+  padding: 0 10px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  border: none;
+  font-family: "Comfortaa", cursive;
+}
+
+#mesBox .mess button {
+  padding: 8px 25px;
+  background: tomato;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  letter-spacing: 2px;
+  transition: all 0.1s;
+  border: none;
+  outline: none;
+  font-size: 1.1em;
+  font-family: "Lobster", cursive;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#mesBox .mess:hover button:hover {
+  background: #d9d9d9;
+  color: #000;
+}
+
+#contact {
+  width: 100%;
+  height: 480px;
+  padding: 0 150px;
+  background: #e0e0e0;
+}
+
+#contact h1 {
+  padding: 20px 0;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
+#contact span {
+  letter-spacing: 1px;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+#contact ul {
+  padding-top: 18px;
+  list-style: none;
+}
+
+#contact ul li {
+  margin: 5px 0;
+  font-family: "Comfortaa", cursive;
+}
+
+#contact ul li .ficn {
+  margin-right: 25px;
+}
+
+#contact form {
+  margin-top: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+#contact form input {
+  margin: 7px 0;
+  width: 100%;
+  height: 55px;
+  font-size: 1rem;
+  padding: 0 10px;
+  border: 1px solid #aaa;
+  font-family: "Comfortaa", cursive;
+}
+
+#contact form button {
+  padding: 13px 25px;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  font-family: "Lobster", cursive;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+#contact form button:hover {
+  background: #979797;
+  color: #000;
+}
+
+footer {
+  width: 100%;
+  height: 230px;
+  padding: 0 150px;
+  background: #e0e0e0;
+  font-family: "Comfortaa", cursive;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .foot {
+  width: 100%;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .foot .media .fa-brands {
+  font-size: 1.3rem;
+  border-radius: 50%;
+  color: grey;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+
+footer .foot .media .fa-brands:hover {
+  color: #000;
+  transform: rotateZ(-180deg) scale(1.5);
+}

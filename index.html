@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/trophy.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <nav>
+
+      <h3><i class="fa-sharp fa-solid fa-location-dot"></i>Nadia</h3>
+      <div class="srh">
+        <input
+          type="text"
+          id="srh"
+          class=""
+          placeholder="Search..."
+          autocomplete="off"
+        />
+        <label for="srh"><i class="fa-solid fa-magnifying-glass"></i></label>
+      </div>
+
+    </nav>
+
+    <section id="home">
+
+      <div class="box">
+        <header>
+          <ul>
+            <li class="active">
+              <a href="#flight" class="on"
+                ><i
+                  class="fa-solid fa-plane"
+                  style="
+                    transform: rotate(-45deg);
+                    margin-right: 15px;
+                    font-size: 1rem;
+                  "
+                ></i
+                >Flight</a
+              >
+            </li>
+            <li>
+              <a href="#hotel"
+                ><i
+                  class="fa-solid fa-bed"
+                  style="font-size: 1rem; margin-right: 15px"
+                ></i
+                >Hotel</a
+              >
+            </li>
+            <li>
+              <a href="#rental"
+                ><i
+                  class="fa-solid fa-car"
+                  style="font-size: 1rem; margin-right: 15px"
+                ></i
+                >Rental</a
+              >
+            </li>
+          </ul>
+        </header>
+
+        <div class="content">
+
+          <aside id="flight">
+            <h2>Travel the world with us</h2>
+            <div class="ipts">
+              <div class="from">
+                <label for="from">From</label>
+                <input
+                  type="text"
+                  placeholder="Departing from"
+                  name="from"
+                  id="from"
+                />
+              </div>
+
+              <div class="from">
+                <label for="from">To</label>
+                <input
+                  type="text"
+                  name="to"
+                  id="to"
+                  class="to"
+                  placeholder="Arriving at"
+                />
+              </div>
+            </div>
+            <input type="submit" value="Search and find dates" />
+          </aside>
+
+          <aside id="hotel">
+            <ul>
+              <li style="font-size: 2.3rem; letter-spacing: 2px">
+                Find the best hotels
+              </li>
+              <li style="font-size: 1.3rem; letter-spacing: 1px">
+                Book a hotel with us and get the best fares and promotions.
+              </li>
+              <li style="font-size: 1.3rem; letter-spacing: 1px">
+                We know hotels - we know comfort.
+              </li>
+              <li><a href="#">Search Hotels</a></li>
+            </ul>
+          </aside>
+
+          <aside id="rental">
+            <ul>
+              <li style="font-size: 2.3rem; letter-spacing: 2px">
+                Best car rental in the world!
+              </li>
+              <li>
+                <span>DISCOUNT!</span>Special offer if you book today: 25% off
+                anywhere in the world with CarServiceRentalRUs
+              </li>
+              <li>
+                <input
+                  type="text"
+                  name="text"
+                  id=""
+                  placeholder="Pick-up point"
+                  autocomplete="off"
+                />
+              </li>
+              <li><a href="#">Search Availability</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="offers">
+      <h2>Good Offers Right Now</h2>
+      <span>Up to <b>50%</b> discount.</span>
+      <div class="images">
+        <div class="fimg">
+          <img src="img/railaywest.webp" alt="railaywest" />
+          <span>Railay West, Thailand</span>
+        </div>
+        <div class="timg">
+          <img src="img/glencoe.webp" alt="glencoe" />
+          <span class="one">Glencoe, Scotland</span>
+          <img src="img/halongbay.webp" alt="halongbay" />
+          <span class="two">Lake Atitlan, Guatemala</span>
+        </div>
+        <div class="timgs">
+          <img src="img/lucerne.webp" alt="lucerne" />
+          <span class="one">Lucerne, Switzerland</span>
+          <img src="img/pamukkle.webp" alt="pamukkle" />
+          <span class="two">Pulau Tioman, Malaysia</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="nature">
+      <h2>Explore Nature</h2>
+      <span>Travel with us and see nature at its finest.</span>
+      <div class="e-box">
+        <div class="l-box">
+          <img src="img/lake.webp" alt="lake" />
+          <h2>Dal Lake, India</h2>
+          <ul>
+            <li>Roundtrip from $279</li>
+            <li>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</li>
+            <li style="list-style-type: none; margin-top: 25px">
+              <a href="#">Buy Tickets</a>
+            </li>
+          </ul>
+        </div>
+        <div class="l-box">
+          <img src="img/great.webp" alt="lake" />
+          <h2>Great Barrier Reef, Australia</h2>
+          <ul>
+            <li>One-way from $239</li>
+            <li>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</li>
+            <li style="list-style-type: none; margin-top: 25px">
+              <a href="#" style="border-radius: 5px 20px 5px 20px"
+                >Buy Tickets</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="mesBox">
+      <div class="mess">
+        <h1>Get the best offers first!</h1>
+        <span>Join our newsletter.</span>
+
+        <div class="mBox">
+          <label for="mail">E-mail</label>
+          <input
+            type="email"
+            id="mail"
+            class=""
+            name="email"
+            placeholder="Your Email address"
+            autocomplete="off"
+          />
+        </div>
+
+        <button>Subscribe</button>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <span>Let us book your next trip!</span>
+      <ul>
+        <li><i class="fa-solid fa-earth-americas ficn"></i>Nashville,Tennessee</li>
+        <li><i class="fa-solid fa-phone-volume ficn"></i>Phone: +00 131313</li>
+        <li><i class="fa-solid fa-envelope ficn"></i>Email: teffy@mail.com</limage.pngi>
+      </ul>
+      <form  action="#" method="post">
+        <input type="text" name="name" id="" placeholder="Name" required />
+        <input type="email" name="mail" id="" placeholder="Email" required/>
+        <input type="text" name="mes" id="" placeholder="Message" required />
+      <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <div class="foot">
+        <h3>Find Us On</h3>
+      <div class="media">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#"><i class="fa-brands fa-discord"></i></a>
+      <a href="#"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+
+      <p>Powered by P2.mpp</p>
+      </div>
+    </footer>
+  
+  </body>
+</html>
